@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #B22222;
+    margin-bottom: 15px;
+}
+
+.incentivo {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.estatisticas, table {
+    margin-top: 20px;
+}
+
+.estatisticas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.estatisticas ul li {
+    font-size: 1em;
+    padding: 8px 0;
+}
+
+.icone {
+    font-size: 1.5em;
+    color: #B22222;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #B22222;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #8B0000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #B22222;
+    color: white;
+}
+
+.sucesso {
+    font-size: 1.1em;
+    color: #006400;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #B22222;
+    color: white;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentivo à Doação de Sangue</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💉 Importância da Doação de Sangue</h1>
+        <p class="incentivo">Cada doação pode salvar até <strong>4 vidas</strong>! Seja um herói e ajude a mudar o mundo com uma simples ação.</p>
+        
+        <section class="estatisticas">
+            <h2>Por que doar?</h2>
+            <p>A cada 2 segundos, alguém precisa de sangue. Sua contribuição é vital para hospitais e bancos de sangue atenderem emergências.</p>
+            <ul>
+                <li><span class="icone"><i class="fas fa-heart"></i></span> 1 doação = 4 vidas salvas</li>
+                <li><span class="icone"><i class="fas fa-tint"></i></span> 70% das doações vão para pacientes com câncer</li>
+                <li><span class="icone"><i class="fas fa-clock"></i></span> Tempo de doação: apenas 30 minutos</li>
+            </ul>
+            <a href="/doadores/cadastrar/" class="btn">Doe agora</a>
+        </section>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Doador</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM+2i0xz7/HqZphnE2e2LvjklGfEz/5T6p9WQX" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Agradecemos muito seu ato!</h1>
+        <p>Estamos felizes em saber que você deseja ajudar a salvar vidas. Por favor, forneça algumas informações rápidas que precisamos:</p>
+        
+        <form method="post" class="formulario">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="nome"><i class="fas fa-user"></i> Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="idade"><i class="fas fa-birthday-cake"></i> Idade:</label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_sanguineo"><i class="fas fa-tint"></i> Tipo Sanguíneo:</label>
+                <select name="tipo_sanguineo" id="tipo_sanguineo" required>
+                    <option value="" disabled selected>Selecione seu tipo sanguíneo</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data_ultima_doacao"><i class="fas fa-calendar-alt"></i> Data da Última Doação:</label>
+                <input type="date" name="data_ultima_doacao" id="data_ultima_doacao" required>
+            </div>
+            <div class="form-group">
+                <label for="data_donacao"><i class="fas fa-calendar-check"></i> Data da Doação:</label>
+                <input type="date" name="data_donacao" id="data_donacao" required>
+            </div>
+            <button type="submit" class="botao">Cadastrar</button>
+        </form>
+        {% if success %}
+            <p class="mensagem-sucesso">Obrigado pela sua doação! Você está ajudando a salvar vidas.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

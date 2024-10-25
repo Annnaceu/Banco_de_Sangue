@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Doadores</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Doadores Cadastrados</h2>
+        <p class="incentivo">Estes são os heróis que se dispuseram a salvar vidas. Junte-se a eles!</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Tipo Sanguíneo</th>
+                    <th>Data da Última Doação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for doador in doadores %}
+                <tr>
+                    <td>{{ doador.nome }}</td>
+                    <td>{{ doador.idade }}</td>
+                    <td>{{ doador.tipo_sanguineo }}</td>
+                    <td>{{ doador.data_ultima_doacao }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
